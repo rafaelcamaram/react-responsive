@@ -866,7 +866,7 @@ object-assign
         }
         function MediaQuery(_ref) {
             var children = _ref.children, device = _ref.device, onChange = _ref.onChange, settings = _objectWithoutProperties(_ref, [ "children", "device", "onChange" ]), matches = Object(__WEBPACK_IMPORTED_MODULE_0__useMediaQuery__.a)(settings, device, onChange);
-            return "function" == typeof children ? children(matches) : matches ? children : null;
+            return "function" == typeof children ? children(matches, device) : matches ? children : null;
         }
         __webpack_exports__.a = MediaQuery;
         var __WEBPACK_IMPORTED_MODULE_0__useMediaQuery__ = __webpack_require__(0);
